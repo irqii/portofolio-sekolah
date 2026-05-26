@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>modifikasi portofolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -11,7 +11,9 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid bg-dark navbar-dark fixed-top sticky-top">
                 <a class="navbar-brand" href="#">IRQI PORTOFOLIO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse shadow" id="navbarNavDropdown">
@@ -37,10 +39,15 @@
             </div>
         </nav>
     </div>
+    <div class="container">
+        <button id="mode" onclick="darkMode()" class="btn btn-dark">
+    Dark Mode
+</button>
+    </div>
     <div class="text-center">
-  <img src="irqi lagi.jpeg" class="rounded-circle shadow" alt="">
+  <img src="gambar/irqi lagi.jpeg" class="rounded-circle shadow" alt="">
   <h1 class="display-3">Muh Irqi Rizkillah</h1  >
-    <h3><b>KEAHLIAN GUE</b></h3>
+    <h3 id="keahlian"><b>KEAHLIAN GUE</b></h3>
     <h1 class="badge bg-success">HTML</h1>
     <h1 class="badge bg-danger">CSS</h1>
     <h1 class="badge bg-warning">BOOTSTRAP</h1>
@@ -129,51 +136,54 @@
         <div class="row mt-5 justify-content-center">
             <div class="col-md-4">
                 <div class="card border-0 shadow" style="width: 18rem;">
-                    <img src="irqi-estetik.jpeg" class="card-img-top ratio ratio-1x1" alt="...">
+                    <img src="gambar/irqi-estetik.jpeg" class="card-img-top ratio ratio-1x1" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Estetikk bangett</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Ditail</a>
+                        <p id="deskripsi1"></p>
+                        <a id="detail1" class="btn btn-outline-primary w-100" onclick="lihatDeskripsi1()">Lihat Ditail</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card border-0 shadow" style="width: 18rem;">
-                    <img src="irqi-kece.jpeg" class="card-img-top ratio ratio-1x1" alt="">
+                    <img src="gambar/irqi-kece.jpeg" class="card-img-top ratio ratio-1x1" alt="">
                     <div class="card-body">
                         <h5 class="card-title">KECE ABISSSS</h5>
-                        <P class="card-text">dari dulu itu Irqi kece abiss bahkan tembus hingga 9999Auraa</P>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Ditail</a>
+                        <p id="deskripsi2"></p>
+                        <a id="detail2" class="btn btn-outline-primary w-100" onclick="lihatDeskripsi2()">Lihat Ditail</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card border-0 shadow" style="width: 18rem;">
-                    <img src="irqi-bocil.jpeg" class="card-img-top ratio ratio-1x1" alt="">
+                    <img src="gambar/irqi-bocil.jpeg" class="card-img-top ratio ratio-1x1" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Super Rajinnnn</h5>
-                        <P class="card-text">Bahkan dari kecil irqi sudah rajin belajar dan mengerjakan tugas dari sekolah</P>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Ditail</a>
+                        <p id="deskripsi3"></p>
+                        <a id="detail3" class="btn btn-outline-primary w-100" onclick="lihatDeskripsi3()">Lihat Ditail</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card border-0 shadow" style="width: 18rem;">
-                    <img src="WEWET2.jpeg" class="card-img-top ratio ratio-1x1" alt="...">
+                    <img src="gambar/WEWET2.jpeg" class="card-img-top ratio ratio-1x1" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Estetikk bangett</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Ditail</a>
+                        <p id="deskripsi4"></p>
+                        <a id="detail4" class="btn btn-outline-primary w-100" onclick="lihatDeskripsi4()" >Lihat Ditail</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card border-0 shadow" style="width: 18rem;">
-                    <img src="WEWET1.jpeg" class="card-img-top ratio ratio-1x1" alt="...">
+                    <img src="gambar/WEWET1.jpeg" class="card-img-top ratio ratio-1x1" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Estetikk bangett</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-primary w-100">Lihat Ditail</a>
+                        <p id="deskripsi5"></p>
+                        <a id="detail5" class="btn btn-outline-primary w-100" onclick="lihatDeskripsi5()">Lihat Ditail</a>
                     </div>
                 </div>
             </div>
@@ -187,17 +197,20 @@
      <div class="container col-md-6">
         <br>
         <h3 class="text-center text-light"><b>Ingin Berkolaborasi?</b></h3>
-        <div class="row justify-content-center bg-light">
-            <label class="form-label fw-semibold">Pesan</label>
-            <textarea class="form-control mb-3 " rows="5" placeholder="Tulis Pesan Anda"></textarea>
-            <button class="btn btn-primary w-100">Kirim Ke Whatssapp</button>
+        <div class="row justify-content-center bg-dark">
+            <label class="form-label fw-semibold bg-dark">Pesan</label>
+            <textarea id="pesan" class="form-control mb-3 bg-dark text-light" rows="5" placeholder="Tulis Pesan Anda"></textarea>
+            <button class="btn btn-outline-primary w-100" onclick="kirimPesan()">Kirim Ke Whatssapp</button>
         </div>
      </div>
     </section>
-    <br>
+    <br>    
     <br>
     <FOOTER class="text-center bg-dark text-light">
         <P>@2026 IRQI-PORTOFOLIO XI PPLG 1</P>
     </FOOTER>
+
+    
+    <script src="js.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+body{
+    background-image: url(https://th.bing.com/th/id/OIP.r_IsEEBtdSWiPGYUXJb1LAHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+h1{
+    font-style: italic;
+    color: azure;
+    text-align: center;
+    font-size: 350%;
+}
+h2{
+    color: azure;
+    font-style: italic;
+}
+li{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+b{
+    color: azure;
+    font-style: italic;
+}
+p{
+    color: azure;
+    font-style: italic;
+}

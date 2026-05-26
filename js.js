@@ -4,7 +4,7 @@ function detail(){
  function kirimPesan() {
     let pesan = document.getElementById("pesan").value;
     let nomor = "6282196999916";
-    let url = `https://wa.me/${62896999916}?text=${encodeURIComponent(pesan)}`;
+    let url = `https://wa.me/${6282196999916}?text=${encodeURIComponent(pesan)}`;
     window.open(url, "_blank");
 }
 function darkMode(){

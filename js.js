@@ -1,24 +1,31 @@
-function detail(){
-    alert("ini portofolio Irqi");
-}
  function kirimPesan() {
     let pesan = document.getElementById("pesan").value;
     let nomor = "6282196999916";
     let url = `https://wa.me/${6282196999916}?text=${encodeURIComponent(pesan)}`;
     window.open(url, "_blank");
 }
-function darkMode(){
-    document.body.style.backgroundColor ="black";
-    document.body.style.color="white";
-    document.getElementById("mode").innerHTML = "whiteMode";
-    document.getElementById("mode").setAttribute("onclick", "whiteMode()");
-}
-function whiteMode(){
-    document.body.style.backgroundColor ="white";
-    document.body.style.color="black";
-    document.getElementById("mode").innerHTML = "darkMode";
-    document.getElementById("mode").setAttribute("onclick", "darkMode()");
-}
+//-----------------------//
+
+const tombol = document.getElementById("themeToggle");
+const icon = document.getElementById("icon");
+
+tombol.addEventListener("click", function(){
+
+    if(document.body.style.backgroundColor == "black"){
+
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+
+        icon.src = "gambar/bulan.png";
+
+    } else {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+
+        icon.src = "gambar/matahari.png";
+    }
+
+});
 
 function lihatDeskripsi1(){ 
     document.getElementById("deskripsi1").innerHTML = 
@@ -84,3 +91,4 @@ function Tutup5(){
     document.getElementById("detail5").innerHTML = "Lihat Ditail";
     document.getElementById("detail5").setAttribute("onclick", "lihatDeskripsi5()");
 }
+//-----------------------//

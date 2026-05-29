@@ -92,3 +92,16 @@ function Tutup5(){
     document.getElementById("detail5").setAttribute("onclick", "lihatDeskripsi5()");
 }
 //-----------------------//
+
+ function bukaig() {
+    let url = `https://www.instagram.com/iirrrqirizz/`;
+    window.open(url, "_blank");
+}
+ function bukagithub() {
+    let url = `https://github.com/irqii`;
+    window.open(url, "_blank");
+}
+ function bukatt() {
+    let url = `https://www.tiktok.com/@iirrrqii`;
+    window.open(url, "_blank");
+}

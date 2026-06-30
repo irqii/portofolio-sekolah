@@ -1,8 +1,10 @@
 :root{
 
-    /* Color */
+    /* Dark Theme */
 
     --bg:#0B0F19;
+
+    --card:#161B22;
 
     --primary:#4F8CFF;
 
@@ -14,16 +16,38 @@
 
     --text-secondary:#B5BED0;
 
-    /* Radius */
+    --border:rgba(255,255,255,.08);
 
     --radius:18px;
 
-    /* Shadow */
-
     --shadow:0 10px 30px rgba(0,0,0,.25);
 
-    /* Transition */
-
     --transition:.35s ease;
+
+}
+
+/* ==========================
+   LIGHT THEME
+========================== */
+
+body.light{
+
+    --bg:#F6F8FC;
+
+    --card:#FFFFFF;
+
+    --primary:#4F8CFF;
+
+    --secondary:#7B61FF;
+
+    --accent:#00D4FF;
+
+    --text:#1D2939;
+
+    --text-secondary:#667085;
+
+    --border:#D9E2EC;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
 
 }

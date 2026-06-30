@@ -132,15 +132,47 @@
 
 .project-stack span{
 
-    padding:8px 15px;
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 16px;
 
     border-radius:999px;
 
-    background:rgba(255,255,255,.06);
-
-    border:1px solid rgba(255,255,255,.08);
-
     font-size:.85rem;
+
+    font-weight:600;
+
+    color:#fff;
+
+}
+
+/* HTML */
+
+.project-stack span:nth-child(1){
+
+    background:#E34F26;
+
+}
+
+/* CSS */
+
+.project-stack span:nth-child(2){
+
+    background:#1572B6;
+
+}
+
+/* JavaScript */
+
+.project-stack span:nth-child(3){
+
+    background:#F7DF1E;
+
+    color:#000;
 
 }
 
@@ -166,11 +198,9 @@
 
     border-radius:12px;
 
-    background:rgba(255,255,255,.05);
+    font-weight:600;
 
-    border:1px solid rgba(255,255,255,.08);
-
-    transition:.35s;
+    transition:.3s;
 
 }
 
@@ -217,5 +247,45 @@
     flex-direction:column;
 
 }
+
+}
+
+/* Live Demo */
+
+.project-button a:first-child{
+
+    background:#4f8cff;
+
+    color:#fff;
+
+    border:2px solid #4f8cff;
+
+}
+
+.project-button a:first-child:hover{
+
+    background:#2e6de6;
+
+    border-color:#2e6de6;
+
+}
+
+/* GitHub */
+
+.project-button a:last-child{
+
+    background:#24292e;
+
+    color:#fff;
+
+    border:2px solid #24292e;
+
+}
+
+.project-button a:last-child:hover{
+
+    background:#111;
+
+    border-color:#111;
 
 }

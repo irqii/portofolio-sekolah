@@ -4,845 +4,421 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>modifikasi portofolio</title>
-    <link rel="icon" href="assets/images/logo.png">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/certificates.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="assets/images/logo.png" />
+    <link rel="stylesheet" href="css/variabel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/certificates.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
   <body>
-
-<header>
-
-    <nav class="navbar">
-
+    <header>
+      <nav class="navbar">
         <div class="container">
+          <a href="#" class="logo"> IRQI </a>
 
-            <a href="#" class="logo">
-                IRQI
-            </a>
+          <ul class="nav-menu">
+            <li>
+              <a href="#hero">Home</a>
+            </li>
 
-            <ul class="nav-menu">
+            <li>
+              <a href="#about">About</a>
+            </li>
 
-                <li>
-                    <a href="#hero">Home</a>
-                </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
 
-                <li>
-                    <a href="#about">About</a>
-                </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
 
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
+            <li>
+              <a href="#certificates">Certificates</a>
+            </li>
 
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
 
-                <li>
-                    <a href="#certificates">Certificates</a>
-                </li>
+          <div class="nav-right">
+            <button id="themeToggle" class="theme-toggle">
+              <img id="icon" src="assets/images/bulan.png" alt="Theme" />
+            </button>
 
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-            <div class="nav-right">
-
-                <button id="themeToggle" class="theme-toggle">
-
-                    <img
-                        id="icon"
-                        src="assets/images/bulan.png"
-                        alt="Theme">
-
-                </button>
-
-                <button id="menuToggle" class="menu-toggle">
-
-                    ☰
-
-                </button>
-
-            </div>
-
+            <button id="menuToggle" class="menu-toggle">☰</button>
+          </div>
         </div>
+      </nav>
+    </header>
 
-    </nav>
+    <main>
+      <!-- ================= HERO ================= -->
 
-</header>
+      <section id="hero" class="fade-up">
+        <div class="container hero-container">
+          <div class="hero-left fade-left">
+            <span class="hero-tag"> 👋 Hello, I'm </span>
 
-<main>
+            <h1>Muh Irqi Rizkillah</h1>
 
-<!-- ================= HERO ================= -->
-
-<section id="hero">
-
-    <div class="container hero-container">
-
-        <div class="hero-left">
-
-            <span class="hero-tag">
-
-                👋 Hello, I'm
-
-            </span>
-
-            <h1>
-
-                Muh Irqi Rizkillah
-
-            </h1>
-
-            <h2>
-
-                Student • Future Full Stack Developer
-
-            </h2>
+            <h2>Student • Future Full Stack Developer</h2>
 
             <p>
-
-                Saya adalah siswa SMKN 1 Makassar jurusan Pengembangan
-                Perangkat Lunak dan Gim (PPLG) yang berfokus pada
-                Frontend Development, UI Design, dan terus belajar
-                Backend Development.
-
+              Saya adalah siswa SMKN 1 Makassar jurusan Pengembangan Perangkat
+              Lunak dan Gim (PPLG) yang berfokus pada Frontend Development, UI
+              Design, dan terus belajar Backend Development.
             </p>
 
             <div class="hero-info">
-
-                <span>📍 Indonesia</span>
-
-                <span>🎓 SMK PPLG</span>
-
-                <span>💻 Front-End Learner</span>
-
-                <span>🎨 UI Enthusiast</span>
-
-                <span>☕ Coffee & Code</span>
-
+              <span>📍 Indonesia</span>
+              <span>🎓 SMK PPLG</span>
+              <span>💻 Front-End Learner</span>
+              <span>🎨 UI Enthusiast</span>
+              <span>☕ Coffee & Code</span>
             </div>
 
             <div class="hero-button">
-
-                <a href="#projects" class="btn-primary">
-
-                    View Projects
-
-                </a>
-
-                <a href="#contact" class="btn-secondary">
-
-                    Contact Me
-
-                </a>
-
+              <a href="#projects" class="btn-primary"> View Projects </a>
+              <a href="#contact" class="btn-secondary"> Contact Me </a>
             </div>
 
             <div class="hero-social">
-
-                <button onclick="bukaig()">
-
-                    <img src="https://png.pngtree.com/element_our/sm/20180630/sm_5b37de3263964.jpg">
-
-                </button>
-
-                <button onclick="bukagithub()">
-
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
-
-                </button>
-
-                <button onclick="bukatt()">
-
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/450/small_2x/tiktok-icon-free-png.png">
-
-                </button>
-
+              <button onclick="bukaig()">
+                <img
+                  src="https://png.pngtree.com/element_our/sm/20180630/sm_5b37de3263964.jpg"
+                />
+              </button>
+              <button onclick="bukagithub()">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                />
+              </button>
+              <button onclick="bukatt()">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/016/716/450/small_2x/tiktok-icon-free-png.png"
+                />
+              </button>
             </div>
+          </div>
 
-        </div>
-
-        <div class="hero-right">
-
+          <div class="hero-right fade-right">
             <div class="hero-image">
-
-                <img
-                    src="assets/images/irqi lagi.jpeg"
-                    alt="Irqi">
-
+              <img src="assets/images/irqi lagi.jpeg" alt="Irqi" />
             </div>
-
+          </div>
         </div>
+      </section>
+      <!-- ================= ABOUT ================= -->
 
-    </div>
-
-</section>
-<!-- ================= ABOUT ================= -->
-
-<section id="about">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            About Me
-        </h2>
-
-        <div class="about-container">
-
+      <section id="about" class="fade-up">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-container">
             <div class="about-image">
-
-                <img
-                    src="assets/images/irqi-kece.jpeg"
-                    alt="About Irqi">
-
+              <img src="assets/images/irqi-kece.jpeg" alt="About Irqi" />
             </div>
 
-            <div class="about-content">
-
-                <span class="about-tag">
-                    About Me
-                </span>
-
-                <h3>
-                    Passionate Student Who Loves Building Beautiful Websites
-                </h3>
-
-                <p>
-
-                    Saya adalah seorang siswa SMKN 1 Makassar jurusan
-                    Pengembangan Perangkat Lunak dan Gim (PPLG)
-                    yang memiliki ketertarikan besar pada dunia
-                    web development, UI/UX, dan teknologi modern.
-
-                </p>
-
-                <p>
-
-                    Saat ini saya sedang mempelajari HTML, CSS,
-                    JavaScript, PHP, Git, GitHub, dan berbagai
-                    teknologi web lainnya untuk mempersiapkan diri
-                    menjadi seorang Full Stack Developer.
-
-                </p>
-
-                <div class="about-info">
-
-                    <div class="info-card">
-
-                        <h4>
-                            🎓 Education
-                        </h4>
-
-                        <p>
-
-                            SMKN 1 Makassar
-
-                        </p>
-
-                    </div>
-
-                    <div class="info-card">
-
-                        <h4>
-                            💻 Focus
-                        </h4>
-
-                        <p>
-
-                            Front-End Development
-
-                        </p>
-
-                    </div>
-
-                    <div class="info-card">
-
-                        <h4>
-
-                            🚀 Goal
-
-                        </h4>
-
-                        <p>
-
-                            Become Full Stack Developer
-
-                        </p>
-
-                    </div>
-
+            <div class="about-content fade-right">
+              <span class="about-tag"> About Me </span>
+              <h3>Passionate Student Who Loves Building Beautiful Websites</h3>
+              <p>
+                Saya adalah seorang siswa SMKN 1 Makassar jurusan Pengembangan
+                Perangkat Lunak dan Gim (PPLG) yang memiliki ketertarikan besar
+                pada dunia web development, UI/UX, dan teknologi modern.
+              </p>
+              <p>
+                Saat ini saya sedang mempelajari HTML, CSS, JavaScript, PHP,
+                Git, GitHub, dan berbagai teknologi web lainnya untuk
+                mempersiapkan diri menjadi seorang Full Stack Developer.
+              </p>
+              <div class="about-info">
+                <div class="info-card zoom">
+                  <h4>🎓 Education</h4>
+                  <p>SMKN 1 Makassar</p>
                 </div>
-
+                <div class="info-card zoom">
+                  <h4>💻 Focus</h4>
+                  <p>Front-End Development</p>
+                </div>
+                <div class="info-card zoom">
+                  <h4>🚀 Goal</h4>
+                  <p>Become Full Stack Developer</p>
+                </div>
+              </div>
             </div>
-
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- ================= SKILLS ================= -->
 
-</section>
-
-
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills">
-
-    <div class="container">
-
-        <h2 class="section-title">
-
-            Skills
-
-        </h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-
-                <h3>
-
-                    HTML
-
-                </h3>
-
-                <div class="skill-bar">
-
-                    <div
-                        class="skill-progress"
-                        style="width:88%;">
-
-                    </div>
-
-                </div>
-
-                <span>
-
-                    88%
-
-                </span>
-
+      <section id="skills" class="fade-up"> 
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card zoom">
+              <h3>HTML</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+              <span> 88% </span>
             </div>
-
-            <div class="skill-card">
-
-                <h3>
-
-                    CSS
-
-                </h3>
-
-                <div class="skill-bar">
-
-                    <div
-                        class="skill-progress"
-                        style="width:84%;">
-
-                    </div>
-
-                </div>
-
-                <span>
-
-                    84%
-
-                </span>
-
+            <div class="skill-card zoom">
+              <h3>CSS</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 84%"></div>
+              </div>
+              <span> 84% </span>
             </div>
-
-            <div class="skill-card">
-
-                <h3>
-
-                    JavaScript
-
-                </h3>
-
-                <div class="skill-bar">
-
-                    <div
-                        class="skill-progress"
-                        style="width:47%;">
-
-                    </div>
-
-                </div>
-
-                <span>
-
-                    47%
-
-                </span>
-
+            <div class="skill-card zoom">
+              <h3>JavaScript</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 47%"></div>
+              </div>
+              <span> 47% </span>
             </div>
-
-            <div class="skill-card">
-
-                <h3>
-
-                    PHP
-
-                </h3>
-
-                <div class="skill-bar">
-
-                    <div
-                        class="skill-progress"
-                        style="width:24%;">
-
-                    </div>
-
-                </div>
-
-                <span>
-
-                    24%
-
-                </span>
-
+            <div class="skill-card zoom">
+              <h3>PHP</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 24%"></div>
+              </div>
+              <span> 24% </span>
             </div>
-
-            <div class="skill-card">
-
-                <h3>
-
-                    Git & GitHub
-
-                </h3>
-
-                <div class="skill-bar">
-
-                    <div
-                        class="skill-progress"
-                        style="width:61%;">
-
-                    </div>
-
-                </div>
-
-                <span>
-
-                    61%
-
-                </span>
-
+            <div class="skill-card zoom">
+              <h3>Git & GitHub</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 61%"></div>
+              </div>
+              <span> 61% </span>
             </div>
-
-            <div class="skill-card">
-
-                <h3>
-
-                    UI Design
-
-                </h3>
-
-                <div class="skill-bar">
-
-                    <div
-                        class="skill-progress"
-                        style="width:70%;">
-
-                    </div>
-
-                </div>
-
-                <span>
-
-                    79%
-
-                </span>
-
+            <div class="skill-card zoom">
+              <h3>UI Design</h3>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+              <span> 79% </span>
             </div>
-
+          </div>
         </div>
+      </section>
+      <!-- ================= PROJECTS ================= -->
 
-    </div>
+      <section id="projects">
+        <div class="container">
+          <div class="section-title fade-up">
+            <h2>Projects</h2>
 
-</section>
-<!-- ================= PROJECTS ================= -->
+            <p>
+              Beberapa project yang telah saya buat selama proses belajar web
+              development.
+            </p>
+          </div>
 
-<section id="projects">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            My Projects
-        </h2>
-
-        <p class="section-subtitle">
-
-            Beberapa project yang pernah saya buat selama belajar
-            Web Development.
-
-        </p>
-
-        <div class="projects-grid">
-
-
+          <div class="projects-grid">
             <!-- Project 1 -->
 
-            <article class="project-card">
+            <div class="project-card card zoom">
+              <div class="project-image">
+                <img
+                  src="assets/images/portfolio.png"
+                  alt="Portfolio"
+                />
+              </div>
 
-                <div class="project-image">
+              <div class="project-content">
+                <span class="project-tag"> Featured </span>
 
-                    <img
-                        src="assets/images/project-portfolio.png"
-                        alt="Portfolio">
+                <h3>Portfolio Website</h3>
 
+                <p>
+                  Website portfolio pribadi yang dibuat menggunakan HTML, CSS
+                  dan JavaScript dengan desain modern, responsive, serta
+                  mendukung Dark Mode.
+                </p>
+
+                <div class="project-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
                 </div>
 
-                <div class="project-content">
+                <div class="project-button">
+                  <a
+                    href="https://irqii.github.io/portofolio-sekolah/"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
 
-                    <span class="project-tag">
+                  <a
+                    href="https://github.com/irqii/portofolio-sekolah"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
 
-                        Personal
+            <!-- Project 2 -->
 
-                    </span>
+            <div class="project-card card zoom">
+              <div class="project-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCu7loSd8roy8b7pd06B298FxMbM4I-Rj_9A&s"
+                  alt="coming soon"
+                />
+              </div>
 
-                    <h3>
+              <div class="project-content">
+                <span class="project-tag"> Procces </span>
 
-                        Portfolio Website
+                <h3>Coming Soon</h3>
 
-                    </h3>
+                <p>
+                  A new project is currently in development. Stay tuned for the next update!
+                </p>
 
-                    <p>
-
-                        Website portfolio pribadi yang dibuat
-                        menggunakan HTML, CSS dan JavaScript
-                        dengan fokus pada UI modern dan responsive.
-
-                    </p>
-
-                    <div class="project-stack">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-button">
-
-                        <a href="#">
-
-                            Live Demo
-
-                        </a>
-
-                        <a href="#">
-
-                            GitHub
-
-                        </a>
-
-                    </div>
-
+                <div class="project-stack">
+                  <span>-</span>
+                  <span>-</span>
+                  <span>-</span>
                 </div>
 
-            </article>
+                <div class="project-button">
+                  <a
+                    href="#"
+                    target="_blank"
+                  >
+                    See You
+                  </a>
 
-
-
-            <!-- Project 3 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-
-                    <img
-                        src="assets/images/project-comingsoon.jpg"
-                        alt="Coming Soon">
-
+                  <a
+                    href="#"
+                    target="_blank"
+                  >
+                    Soon.
+                  </a>
                 </div>
-
-                <div class="project-content">
-
-                    <span class="project-tag">
-
-                        Coming Soon
-
-                    </span>
-
-                    <h3>
-
-                        Next Project
-
-                    </h3>
-
-                    <p>
-
-                        Masih dalam tahap pengembangan.
-                        Nantikan project berikutnya
-                        dengan teknologi yang lebih modern.
-
-                    </p>
-
-                    <div class="project-stack">
-
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-button">
-
-                        <a href="#">
-
-                            Soon
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- ================= CERTIFICATES ================= -->
 
-</section>
-
-
-
-<!-- ================= CERTIFICATES ================= -->
-
-<section id="certificates">
-
-    <div class="container">
-
-        <h2 class="section-title">
-
-            Certificates
-
-        </h2>
-
-        <p class="section-subtitle">
-
+      <section id="<div class="certificate-card zoom">
+        <div class="container">
+          <h2 class="section-title">Certificates</h2>
+          <p class="section-subtitle">
             Sertifikat dan pencapaian selama proses belajar.
-
-        </p>
-
-        <div class="certificate-grid">
-
-            <div class="certificate-card">
-
-                <h3>
-
-                    Web Design Basic
-
-                </h3>
-
-                <p>
-
-                    SMKN 1 Makassar
-
-                </p>
-
-                <span>
-
-                    In Progress
-
-                </span>
-
+          </p>
+          <div class="certificate-grid">
+            <div class="certificate-card zoom">
+              <h3>Web Design Basic</h3>
+              <p>SMKN 1 Makassar</p>
+              <span> In Progress </span>
             </div>
-
-            <div class="certificate-card">
-
-                <h3>
-
-                    Bootstrap
-
-                </h3>
-
-                <p>
-
-                    Front-End Development
-
-                </p>
-
-                <span>
-
-                    Completed
-
-                </span>
-
+            <div class="certificate-card zoom">
+              <h3>Bootstrap</h3>
+              <p>Front-End Development</p>
+              <span> Completed </span>
             </div>
-
-            <div class="certificate-card">
-
-                <h3>
-
-                    PHP Backend
-
-                </h3>
-
-                <p>
-
-                    Learning Journey
-
-                </p>
-
-                <span>
-
-                    In Progress
-
-                </span>
-
+            <div class="certificate-card zoom">
+              <h3>PHP Backend</h3>
+              <p>Learning Journey</p>
+              <span> In Progress </span>
             </div>
-
+          </div>
         </div>
+      </section>
+      <!-- ================= CONTACT ================= -->
 
-    </div>
-
-</section>
-<!-- ================= CONTACT ================= -->
-
-<section id="contact">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Let's Work Together
-        </h2>
-
-        <p class="section-subtitle">
-
-            Punya ide project, ingin berkolaborasi, atau sekadar
-            menyapa? Kirim pesan melalui WhatsApp.
-
-        </p>
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-
-                <div class="contact-card">
-
-                    <h3>📍 Location</h3>
-
-                    <p>
-
-                        Makassar, Indonesia
-
-                    </p>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <h3>📧 Email</h3>
-
-                    <p>
-
-                        muhirqirizkillah@gmail.com
-
-                    </p>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <h3>🎓 Status</h3>
-
-                    <p>
-
-                        Student | PPLG
-
-                    </p>
-
-                </div>
-
+      <section id="contact" class="fade-up">
+        <div class="container">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-subtitle">
+            Punya ide project, ingin berkolaborasi, atau sekadar menyapa? Kirim
+            pesan melalui WhatsApp.
+          </p>
+          <div class="contact-container">
+            <div class="contact-info fade-left">
+              <div class="contact-card">
+                <h3>📍 Location</h3>
+                <p>Makassar, Indonesia</p>
+              </div>
+              <div class="contact-card">
+                <h3>📧 Email</h3>
+                <p>muhirqirizkillah@gmail.com</p>
+              </div>
+              <div class="contact-card">
+                <h3>🎓 Status</h3>
+                <p>Student | PPLG</p>
+              </div>
             </div>
-
-            <div class="contact-form">
-
-                <textarea
-
-                    id="pesan"
-
-                    placeholder="Write your message here...">
-
-                </textarea>
-
-                <button
-
-                    class="btn-primary"
-
-                    onclick="kirimPesan()">
-
-                    Send via WhatsApp
-
-                </button>
-
+            <div class="contact-form fade-right">
+              <textarea id="pesan" placeholder="Write your message here...">
+              </textarea>
+              <button class="btn-primary" onclick="kirimPesan()">
+                Send via WhatsApp
+              </button>
             </div>
-
+          </div>
         </div>
+      </section>
+    </main>
 
-    </div>
+    <!-- ================= FOOTER ================= -->
 
-</section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="footer-content">
-
-        <h2 class="footer-logo">
-            IRQI
-        </h2>
-
+    <footer class="fade-up">
+      <div class="footer-content">
+        <h2 class="footer-logo">IRQI</h2>
         <p class="footer-text">
-            Thank you for visiting my portfolio.
-            Built with HTML, CSS and JavaScript.
+          Thank you for visiting my portfolio. Built with HTML, CSS and
+          JavaScript.
         </p>
-
         <div class="footer-social">
-
-            <a href="https://instagram.com/iirrrqirizz" target="_blank">
-                <img src="https://png.pngtree.com/element_our/sm/20180630/sm_5b37de3263964.jpg" alt="">
-            </a>
-
-            <a href="https://github.com/irqii" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
-            </a>
-
-            <a href="https://tiktok.com/@iirrrqii" target="_blank">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/016/716/450/small_2x/tiktok-icon-free-png.png" alt="">
-            </a>
-
+          <a href="https://instagram.com/iirrrqirizz" target="_blank">
+            <img
+              src="https://png.pngtree.com/element_our/sm/20180630/sm_5b37de3263964.jpg"
+              alt=""
+            />
+          </a>
+          <a href="https://github.com/irqii" target="_blank">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              alt=""
+            />
+          </a>
+          <a href="https://tiktok.com/@iirrrqii" target="_blank">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/016/716/450/small_2x/tiktok-icon-free-png.png"
+              alt=""
+            />
+          </a>
         </div>
-
         <p class="footer-copy">
-            © 2026 Muh Irqi Rizkillah • All Rights Reserved
+          © 2026 Muh Irqi Rizkillah • All Rights Reserved
         </p>
+      </div>
+    </footer>
 
-    </div>
-
-</footer>
-
-<script src="js/sosial.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/theme.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/animation.js"></script>
-
-</body>
-
-</html>
+    <script src="js/sosial.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/about.js"></script>
+  </body>
 </html>

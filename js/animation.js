@@ -1,25 +1,20 @@
-const observer = new IntersectionObserver((entries)=>{
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
 
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("show");
-
-        }
-
+        observer.unobserve(entry.target);
+      }
     });
+  },
+  {
+    threshold: 0.15,
+  },
+);
 
-},{
-    threshold:0.2
-});
-
-document.querySelectorAll(
-
-".fade-up,.fade-left,.fade-right,.zoom"
-
-).forEach(el=>{
-
-    observer.observe(el);
-
-});
+document
+  .querySelectorAll(".fade-up, .fade-left, .fade-right, .zoom")
+  .forEach((element) => {
+    observer.observe(element);
+  });

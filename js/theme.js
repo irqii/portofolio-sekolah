@@ -1,22 +1,32 @@
-
 const tombol = document.getElementById("themeToggle");
 const icon = document.getElementById("icon");
 
-tombol.addEventListener("click", () => {
+const savedTheme = localStorage.getItem("theme");
 
-    if (document.body.style.backgroundColor === "black") {
+if(savedTheme === "light"){
 
-        document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
+    document.body.classList.add("light");
+    icon.src = "assets/images/matahari.png";
 
-        icon.src = "assets/images/bulan.png";
+}else{
 
-    } else {
+    icon.src = "assets/images/bulan.png";
 
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
+}
+
+tombol.addEventListener("click",()=>{
+
+    document.body.classList.toggle("light");
+
+    if(document.body.classList.contains("light")){
 
         icon.src = "assets/images/matahari.png";
+        localStorage.setItem("theme","light");
+
+    }else{
+
+        icon.src = "assets/images/bulan.png";
+        localStorage.setItem("theme","dark");
 
     }
 

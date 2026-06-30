@@ -1,0 +1,292 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   GLOBAL
+========================================== */
+
+img{
+
+    display:block;
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+    background:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    width:min(1150px,90%);
+    margin:auto;
+
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+section{
+
+    padding:120px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+    max-width:650px;
+
+    margin:auto;
+
+    margin-bottom:70px;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn-primary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:white;
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,.06);
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.info-card,
+.skill-card,
+.project-card,
+.certificate-card,
+.contact-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s;
+
+}
+
+.info-card:hover,
+.skill-card:hover,
+.project-card:hover,
+.certificate-card:hover,
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   TAG
+========================================== */
+
+.hero-tag,
+.about-tag,
+.project-tag{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(79,140,255,.15);
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#09101b;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#77a7ff;
+
+}
+
+/* ==========================================
+   TEXT SELECTION
+========================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   SPACING
+========================================== */
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:50px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:50px;}

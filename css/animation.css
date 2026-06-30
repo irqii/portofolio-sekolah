@@ -1,0 +1,151 @@
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+/* Fade Up */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Fade Left */
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-50px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/* Fade Right */
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(50px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/* Zoom */
+
+.zoom{
+
+    opacity:0;
+
+    transform:scale(.9);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.zoom.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/* Card Hover */
+
+.card,
+.project-card,
+.skill-card,
+.info-card,
+.certificate-card,
+.contact-card{
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.card:hover,
+.project-card:hover,
+.skill-card:hover,
+.info-card:hover,
+.certificate-card:hover,
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* Image Hover */
+
+img{
+
+    transition:transform .4s ease;
+
+}
+
+.hero-image img:hover,
+.about-image img:hover,
+.project-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Button */
+
+button,
+.btn,
+a{
+
+    transition:.3s ease;
+
+}
+
+/* Smooth Scroll */
+
+html{
+
+    scroll-behavior:smooth;
+
+}

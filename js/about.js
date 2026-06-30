@@ -1,32 +1,3 @@
- function kirimPesan() {
-    let pesan = document.getElementById("pesan").value;
-    let nomor = "6282196999916";
-    let url = `https://wa.me/${6282196999916}?text=${encodeURIComponent(pesan)}`;
-    window.open(url, "_blank");
-}
-//-----------------------//
-
-const tombol = document.getElementById("themeToggle");
-const icon = document.getElementById("icon");
-
-tombol.addEventListener("click", function(){
-
-    if(document.body.style.backgroundColor == "black"){
-
-        document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
-
-        icon.src = "gambar/bulan.png";
-
-    } else {
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-
-        icon.src = "gambar/matahari.png";
-    }
-
-});
-
 function lihatDeskripsi1(){ 
     document.getElementById("deskripsi1").innerHTML = 
     "Saya juga menyukai hal-hal yang berbau estetik, mulai dari fotografi, desain tampilan, hingga suasana yang nyaman dan menarik secara visual. Bagi saya, keindahan dalam detail kecil dapat memberikan inspirasi dan membuat sesuatu terlihat lebih hidup, termasuk dalam desain website dan karya digital yang saya buat..";
@@ -90,18 +61,4 @@ function Tutup5(){
     "";
     document.getElementById("detail5").innerHTML = "Lihat Ditail";
     document.getElementById("detail5").setAttribute("onclick", "lihatDeskripsi5()");
-}
-//-----------------------//
-
- function bukaig() {
-    let url = `https://www.instagram.com/iirrrqirizz/`;
-    window.open(url, "_blank");
-}
- function bukagithub() {
-    let url = `https://github.com/irqii`;
-    window.open(url, "_blank");
-}
- function bukatt() {
-    let url = `https://www.tiktok.com/@iirrrqii`;
-    window.open(url, "_blank");
 }

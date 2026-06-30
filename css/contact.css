@@ -1,0 +1,87 @@
+/* ==========================
+   FORM
+========================== */
+
+.contact-form{
+
+    background:var(--card);
+
+    border:1px solid #cfcfcf;
+
+    border-radius:20px;
+
+    padding:35px;
+
+}
+
+.contact-form textarea{
+
+    width:100%;
+
+    min-height:220px;
+
+    resize:none;
+
+    padding:18px;
+
+    border:2px solid #bdbdbd;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    color:#000000;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    outline:none;
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.contact-form textarea:focus{
+
+    border-color:#4f8cff;
+
+    box-shadow:0 0 10px rgba(79,140,255,.25);
+
+}
+
+/* Tombol WhatsApp */
+
+.contact-form button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #198754;
+
+    border-radius:12px;
+
+    background:#198754;
+
+    color:#ffffff;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#157347;
+
+    border-color:#157347;
+
+}
